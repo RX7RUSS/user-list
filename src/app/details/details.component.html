@@ -1,7 +1,13 @@
-<h1>{{ user$.name }}</h1>
-
-<ul>
-  <li><strong>Username:</strong> {{ user$.username }}</li>
-  <li><strong>Email:</strong> {{ user$.email }}</li>
-  <li><strong>Phone:</strong> {{ user$.phone }}</li>
-</ul>
+<a routerLink="" [class.activated]="currentUrl == '/'">
+  <i class="material-icons">home</i>
+</a>
+<span>
+	<h1>{{ user$.name }}</h1>
+</span>
+<div>
+	<ul>
+	  <li><strong>Username:</strong> {{ user$.username }}</li>
+	  <li><strong>Email:</strong> {{ user$.email }}</li>
+	  <li><strong>Phone:</strong> {{ user$.phone }}</li>
+	</ul>
+</div>
